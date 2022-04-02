@@ -1,0 +1,61 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <PublishReadyToRun>false</PublishReadyToRun>
+        <TieredCompilation>false</TieredCompilation>
+        <UseWindowsForms>true</UseWindowsForms>
+    </PropertyGroup>
+    <PropertyGroup>
+        <ApplicationManifest>app.manifest</ApplicationManifest>
+        <ApplicationIcon>Icon.ico</ApplicationIcon>
+    </PropertyGroup>
+    <ItemGroup>
+        <TrimmerRootAssembly Include="Microsoft.Xna.Framework.Content.ContentTypeReader" Visible="false" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="MonoGame.Framework.WindowsDX" Version="3.8.0.1641" />
+        <PackageReference Include="MonoGame.Content.Builder.Task" Version="3.8.0.1641" />
+    </ItemGroup>
+    <ItemGroup>
+        <MonoGameContentReference Include="Content\Content.mgcb" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="..\..\..\.nuget\packages\monogame.extended.content.pipeline\3.8.0\contentFiles\any\netcoreapp3.1\CppNet.dll">
+        <Link>Something\CppNet.dll</Link>
+      </Content>
+      <Content Include="..\..\..\.nuget\packages\monogame.extended.content.pipeline\3.8.0\contentFiles\any\netcoreapp3.1\libmojoshader_64.dll">
+        <Link>Something\libmojoshader_64.dll</Link>
+      </Content>
+      <Content Include="..\..\..\.nuget\packages\monogame.extended.content.pipeline\3.8.0\contentFiles\any\netcoreapp3.1\mgfxc.deps.json">
+        <Link>Something\mgfxc.deps.json</Link>
+      </Content>
+      <Content Include="..\..\..\.nuget\packages\monogame.extended.content.pipeline\3.8.0\contentFiles\any\netcoreapp3.1\mgfxc.dll">
+        <Link>Something\mgfxc.dll</Link>
+      </Content>
+      <Content Include="..\..\..\.nuget\packages\monogame.extended.content.pipeline\3.8.0\contentFiles\any\netcoreapp3.1\mgfxc.exe">
+        <Link>Something\mgfxc.exe</Link>
+      </Content>
+      <Content Include="..\..\..\.nuget\packages\monogame.extended.content.pipeline\3.8.0\contentFiles\any\netcoreapp3.1\mgfxc.pdb">
+        <Link>Something\mgfxc.pdb</Link>
+      </Content>
+      <Content Include="..\..\..\.nuget\packages\monogame.extended.content.pipeline\3.8.0\contentFiles\any\netcoreapp3.1\mgfxc.runtimeconfig.dev.json">
+        <Link>Something\mgfxc.runtimeconfig.dev.json</Link>
+      </Content>
+      <Content Include="..\..\..\.nuget\packages\monogame.extended.content.pipeline\3.8.0\contentFiles\any\netcoreapp3.1\mgfxc.runtimeconfig.json">
+        <Link>Something\mgfxc.runtimeconfig.json</Link>
+      </Content>
+      <Content Include="..\..\..\.nuget\packages\monogame.extended.content.pipeline\3.8.0\contentFiles\any\netcoreapp3.1\SharpDX.D3DCompiler.dll">
+        <Link>Something\SharpDX.D3DCompiler.dll</Link>
+      </Content>
+      <Content Include="..\..\..\.nuget\packages\monogame.extended.content.pipeline\3.8.0\contentFiles\any\netcoreapp3.1\SharpDX.D3DCompiler.xml">
+        <Link>Something\SharpDX.D3DCompiler.xml</Link>
+      </Content>
+      <Content Include="..\..\..\.nuget\packages\monogame.extended.content.pipeline\3.8.0\contentFiles\any\netcoreapp3.1\SharpDX.dll">
+        <Link>Something\SharpDX.dll</Link>
+      </Content>
+      <Content Include="..\..\..\.nuget\packages\monogame.extended.content.pipeline\3.8.0\contentFiles\any\netcoreapp3.1\SharpDX.xml">
+        <Link>Something\SharpDX.xml</Link>
+      </Content>
+    </ItemGroup>
+</Project>

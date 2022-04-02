@@ -1,0 +1,6 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/artur/RiderProjects/MonoGame/MonoGame/Content/Bullet.png","C:/Users/artur/RiderProjects/MonoGame/MonoGame/Content/bin/Windows/Bullet.xnb","TextureProcessor","Texture2DContent",329,1093,0,2249821
+"C:/Users/artur/RiderProjects/MonoGame/MonoGame/Content/Player.png","C:/Users/artur/RiderProjects/MonoGame/MonoGame/Content/bin/Windows/Player.xnb","TextureProcessor","Texture2DContent",692,6485,0,0042018
+"C:/Users/artur/RiderProjects/MonoGame/MonoGame/Content/Pointer.png","C:/Users/artur/RiderProjects/MonoGame/MonoGame/Content/bin/Windows/Pointer.xnb","TextureProcessor","Texture2DContent",526,2813,0,0020815
+"C:/Users/artur/RiderProjects/MonoGame/MonoGame/Content/Seeker.png","C:/Users/artur/RiderProjects/MonoGame/MonoGame/Content/bin/Windows/Seeker.xnb","TextureProcessor","Texture2DContent",641,6485,0,0020807
+"C:/Users/artur/RiderProjects/MonoGame/MonoGame/Content/Wanderer.png","C:/Users/artur/RiderProjects/MonoGame/MonoGame/Content/bin/Windows/Wanderer.xnb","TextureProcessor","Texture2DContent",1037,6485,0,0027172
