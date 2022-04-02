@@ -1,6 +1,6 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
 
 namespace MonoGame
 {
@@ -41,10 +41,7 @@ namespace MonoGame
 
         protected override void Update(GameTime gameTime)
         {
-            var keyState = Keyboard.GetState();
-            
-            if (keyState.IsKeyDown(Keys.Escape))
-                Exit();
+            Input.Update();
             
             EntityManager.Update();
             
