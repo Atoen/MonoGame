@@ -31,6 +31,12 @@ namespace MonoGame
             if (IsDead)
             {
                 _framesUntilRespawn--;
+
+                if (PlayerStatus.Lives != 0) return;
+                    
+                PlayerStatus.Reset();
+                Position = GameRoot.ScreenSize / 2;
+
                 return;
             }
 
@@ -77,8 +83,10 @@ namespace MonoGame
         
         public void Kill()
         {
-            _framesUntilRespawn = 60;
             EnemySpawner.Reset();
+            PlayerStatus.RemoveLife();
+            
+            _framesUntilRespawn = PlayerStatus.IsGameOver ? 300 : 120;
         }
     }
 }

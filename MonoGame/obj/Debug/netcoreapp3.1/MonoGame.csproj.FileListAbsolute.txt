@@ -40,3 +40,4 @@ C:\Users\artur\RiderProjects\MonoGame\MonoGame\bin\Debug\netcoreapp3.1\Content\P
 C:\Users\artur\RiderProjects\MonoGame\MonoGame\bin\Debug\netcoreapp3.1\Content\Pointer.xnb
 C:\Users\artur\RiderProjects\MonoGame\MonoGame\bin\Debug\netcoreapp3.1\Content\Seeker.xnb
 C:\Users\artur\RiderProjects\MonoGame\MonoGame\bin\Debug\netcoreapp3.1\Content\Wanderer.xnb
+C:\Users\artur\RiderProjects\MonoGame\MonoGame\bin\Debug\netcoreapp3.1\Content\NovaSquare.xnb

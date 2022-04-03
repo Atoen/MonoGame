@@ -5,6 +5,7 @@
   <Config />
   <SourceFiles>
     <File>C:/Users/artur/RiderProjects/MonoGame/MonoGame/Content/Bullet.png</File>
+    <File>C:/Users/artur/RiderProjects/MonoGame/MonoGame/Content/File.spritefont</File>
     <File>C:/Users/artur/RiderProjects/MonoGame/MonoGame/Content/Player.png</File>
     <File>C:/Users/artur/RiderProjects/MonoGame/MonoGame/Content/Pointer.png</File>
     <File>C:/Users/artur/RiderProjects/MonoGame/MonoGame/Content/Seeker.png</File>
@@ -12,6 +13,7 @@
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
+    <File>NovaSquare.spritefont</File>
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

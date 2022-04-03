@@ -13,6 +13,7 @@ namespace MonoGame
         // Płynna animacja pojawiania się przez 60 klatek
         private int _timeUntilStart = 60;
         public bool IsAlive => _timeUntilStart <= 0;
+        private int PointValue { get; set; }
 
         private Enemy(Texture2D image, Vector2 position)
         {
@@ -26,6 +27,7 @@ namespace MonoGame
         {
             var enemy = new Enemy(Art.Seeker, position);
             enemy.AddBehaviour(enemy.FollowPlayer());
+            enemy.PointValue = 100;
             
             return enemy;
         }
@@ -34,6 +36,7 @@ namespace MonoGame
         {
             var enemy = new Enemy(Art.Wanderer, position);
             enemy.AddBehaviour(enemy.MoveRandomly());
+            enemy.PointValue = 50;
             
             return enemy;
         }
@@ -61,6 +64,8 @@ namespace MonoGame
         public void WasShot()
         {
             IsExpired = true;
+            PlayerStatus.AddPoints(PointValue);
+            PlayerStatus.AddMultiplier();
         }
         
         public void HandleCollision(Enemy other)
