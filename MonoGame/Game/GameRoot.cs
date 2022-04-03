@@ -9,23 +9,23 @@ namespace MonoGame
         private readonly GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
         
-        public static GameRoot instance { get; private set; }
-        public static Viewport Viewport => instance._graphics.GraphicsDevice.Viewport;
+        public static GameRoot Instance { get; private set; }
+        public static Viewport Viewport => Instance._graphics.GraphicsDevice.Viewport;
         public static Vector2 ScreenSize => new Vector2(Viewport.Width, Viewport.Height);
         
         public GameRoot()
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
-            IsMouseVisible = true;
+            IsMouseVisible = false;
             
-            instance = this;
+            Instance = this;
         }
 
         protected override void Initialize()
         {
-            _graphics.PreferredBackBufferWidth = 800;
-            _graphics.PreferredBackBufferHeight = 600;
+            _graphics.PreferredBackBufferWidth = 1200;
+            _graphics.PreferredBackBufferHeight = 800;
             _graphics.ApplyChanges();
 
             base.Initialize();
@@ -43,6 +43,7 @@ namespace MonoGame
         {
             Input.Update();
             
+            EnemySpawner.Update();
             EntityManager.Update();
             
             base.Update(gameTime);
@@ -54,6 +55,7 @@ namespace MonoGame
             
             _spriteBatch.Begin(SpriteSortMode.Texture, BlendState.Additive);
             EntityManager.Draw(_spriteBatch);
+            _spriteBatch.Draw(Art.Pointer, Input.MousePosition, Color.White);
             _spriteBatch.End();
             
             base.Draw(gameTime);
